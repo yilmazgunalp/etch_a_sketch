@@ -1,4 +1,4 @@
-.box {
+.box, .unmarked {
   border: 1px solid black;
   margin: 0;
   float: left;
@@ -16,3 +16,34 @@
 button {
   margin: 10px;
 }     
+
+#top{
+margin:0;
+height:120px;
+overflow: hidden;
+position: relative;
+
+box-shadow: 6px 3px 4px red;
+    
+    background: white;
+/*transform: skew(30deg,5deg);*/
+
+.topbox{
+  border: 1px solid black;
+  margin: 0;
+  float: left;
+  padding: 0;
+}
+
+.txt{
+  font-family: sans-serif;
+display: inline-block;
+position: absolute;
+left: 40%;
+top: 20%;
+font-size:5em;
+/*line-height: 100%;
+vertical-align: center;
+text-align: center;*/
+opacity: 0.48;
+}
