@@ -4,35 +4,48 @@
   float: left;
 }
 
+#wrapper_div{
+margin-top: 45px;
+position: relative;
+line-height: 100%;
+
+}
+
 #container {
   width: 480px;
   height: 480px;
+  display: inline-block;
+  margin-left: 45px;
 }
 
 .painted {
   background-color: blue;
 }
 
-button {
-  margin: 10px;
-}     
+
 
 #top{
 margin:0;
 height:120px;
 overflow: hidden;
 position: relative;
+-ms-transform:skewX(18deg);
+-webkit-transform:skewX(18deg);
+transform:skewX(18deg);
 
-box-shadow: 6px 3px 4px red;
+
+box-shadow: 0 -8px red;
     
     background: white;
-/*transform: skew(30deg,5deg);*/
 
+}
 .topbox{
+  
   border: 1px solid black;
   margin: 0;
   float: left;
   padding: 0;
+
 }
 
 .txt{
@@ -42,8 +55,65 @@ position: absolute;
 left: 40%;
 top: 20%;
 font-size:5em;
-/*line-height: 100%;
+line-height: 100%;
 vertical-align: center;
-text-align: center;*/
+text-align: center;
 opacity: 0.48;
+transform: skew(18deg,2deg);
+}
+
+body{
+
+background-color: rgb(96,96,96);
+
+
+}
+
+
+
+
+
+#btn_div{
+
+display: inline-block;
+
+vertical-align: middle;
+height: 480px;
+
+}
+
+.btns{
+
+
+display: inline-block;
+margin-left: 90px;
+position: relative;
+top: -240px;
+
+
+
+}
+
+button{
+width: 90px;
+height:90px;
+border-radius: 45px;
+font: 15px arial, sans-serif;
+background-color: crimson;
+box-shadow: 2px 2px 3px grey;
+
+    
+}
+
+button:hover{
+
+background-color: pink;
+font-weight: bold;
+
+
+}
+
+ button:focus{
+
+outline: none;
 }

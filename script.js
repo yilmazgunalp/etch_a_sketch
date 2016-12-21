@@ -103,7 +103,7 @@ $(randomBoxPicker()).css("background-color",randomColor());
 
 
 var reset = function() {
-  $('.marked').css("background-color","white");
+  $('.marked').css("background-color","inherit");
   $('.marked').addClass('unmarked');
   $('.marked').removeClass('marked');
 
@@ -113,7 +113,14 @@ var reset = function() {
 var resize = function() {
     var i= prompt("What grid size would you like?");
      $('.box').remove();
-    return i;   
+    
+if( i !=null){
+return i;
+}
+  else{ 
+  return 16;  
+}
+
 
 };
 
